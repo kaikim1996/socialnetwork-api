@@ -1,11 +1,19 @@
 # socialnetwork-api
 
 ## Description
+A simple social network web application API where users can share their thoughts, react to friends’ thoughts, and create a friend list.
+
 
 ---
 
 ## Installation
+To get started with this project, follow the steps below:
 
+Start the server by running the following command: 
+
+'''bash
+    node server.js
+'''
 
 
 
@@ -13,7 +21,7 @@
 
 ## Usage
 
-
+deployed link: 
 
 ---
 
