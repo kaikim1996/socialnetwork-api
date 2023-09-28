@@ -17,7 +17,7 @@ module.exports = {
             const singleThought = await Thought.findOne({_id: req.params.thoughtId})
                 .select('-__v');
             if(!singleThought){
-                return res.status(404).json({message: "Thought not found!"})
+                return res.status(404).json({message: "error"})
             }
             res.status(200).json(singleThought);
 
@@ -28,7 +28,7 @@ module.exports = {
     async createThought(req,res){
         try{
             if(!req.body.thoughtText || !req.body.userId ||!req.body.username){
-                return res.json({message: "must contain text and userId"});
+                return res.json({message: "info missing"});
             }
             const newThought = await Thought.create(req.body);
             await newThought.save();
@@ -51,4 +51,4 @@ module.exports = {
         }
     },
     
-   
+}

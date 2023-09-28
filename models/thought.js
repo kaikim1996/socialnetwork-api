@@ -1,7 +1,7 @@
 const mongoose = require('mongoose');
 const Reaction = require('./Reaction')
 
-const thoughtSchema = new mongoose.Schema({
+const thoughtSchema = Schema({
 
     thoughtText: {
         type: String,
@@ -15,7 +15,7 @@ const thoughtSchema = new mongoose.Schema({
 
     },
     userId:{
-        type: mongoose.SchemaTypes.ObjectId,
+        type: SchemaTypes.ObjectId,
         ref: "User"
     },
     reactions: [Reaction],
