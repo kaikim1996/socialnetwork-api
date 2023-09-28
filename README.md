@@ -21,7 +21,8 @@ Start the server by running the following command:
 
 ## Usage
 
-deployed link: 
+Heroku deployed link: https://vast-brook-90824-c9b0b75dc76f.herokuapp.com/
+ 
 
 ---
 
